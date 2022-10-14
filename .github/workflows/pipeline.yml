@@ -39,7 +39,7 @@ jobs:
         
       # Run Unit Test
       - name: Unit Test
-        run: npm run test:headless
+        run: npm run test-headless
       
       # Build project
       - name: Build project 
