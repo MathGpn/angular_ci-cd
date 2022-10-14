@@ -52,5 +52,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: dist/tp_ci/
           enable_jekyll: true
- 
-      
+
