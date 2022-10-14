@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: CD
 
 # Controls when the workflow will run
 on:
@@ -45,10 +45,6 @@ jobs:
       # Build project
       - name: Build project 
         run: npm run build:prod
-        
-      # Deploy Requirements:
-      #- name: Install Deploy Requirement
-      #  run: npm run deploy-requirement 
       
 
       - name: Deploy
@@ -59,14 +55,4 @@ jobs:
           publish_dir: dist/tp_ci/
           enable_jekyll: true
  
-        
-      # Deploy Project
-      #- name: Deploy Project
-      #  run: npm run deploy
-        
-      # Upload an artefact to
-      #- name: Upload artifact  
-      #  uses: actions/upload-artifact@v2
-      #  with:
-      #    name: lollipop-${{ github.run_id }}-${{ github.run_number }}
-      #    path: ./dist/lollipop
+      
